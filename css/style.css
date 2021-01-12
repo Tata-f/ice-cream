@@ -1,9 +1,77 @@
-body {
-  font-family: "DM Sans", sans-serif;
-  color: #ffffff;
-  background-color: #ffb8ca;
+:root {
+  --primary-text-color: #000000;
+  --secondary-text-color: #ffffff;
+  --additional-text-color: #907e82;
+  --title-text-color: #ffa5ba;
+  --accent-color: #d41443;
+  --background-color: #ffb8ca;
+  --background-accent: #ecebeb;
 }
 
-/* основной цвет текст #ffffff */
-/* вторичный цвет текста #D41443 */
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  color: var(--primary-text-color);
+  background-color: var(--title-text-color);
+}
+
+/* основной цвет текст #000000 */
+/* вторичный цвет текста #ffffff */
+/* доп. цвет текста #907E82 */
+/* цвет заголовка #FFA5BA */
+/* акцент #D41443 */
 /* фон #FFB8CA */
+
+/* font-family: 'Titan One', cursive; */
+
+/* утилиты */
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  display: block;
+}
+
+/* header */
+
+.site-nav {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.site-nav .link {
+  color: var(--secondary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav button {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.3;
+  color: var(--accent-color);
+  background-color: var(--secondary-text-color);
+}
+
+.header h1 {
+  font-family: Titan One;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
+.passion {
+  color: var(--accent-color);
+}
